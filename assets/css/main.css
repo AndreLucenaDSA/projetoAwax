@@ -1,0 +1,65 @@
+:root {
+    --main-orange: #B28756;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    background-color: #000;
+    color: #FFF;
+}
+
+.container {
+    max-width: 1140px;
+    margin: auto;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 100px;
+}
+
+.menu {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100px;
+}
+
+.menu ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.menu li a {
+    color: #FFF;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    padding-left: 12px;
+    padding-right: 12px;
+    height: 100px;
+    border-bottom: 5px solid #000;
+    font-size: 12px;
+}
+
+.menu li a:hover {
+    border-bottom: 5px solid var(--main-orange);
+}
