@@ -63,3 +63,87 @@ header {
 .menu li a:hover {
     border-bottom: 5px solid var(--main-orange);
 }
+
+.banner {
+    height: calc(100vh - 100px);
+    background-color: #333;
+    background-image: url('../img/bg.jpg');
+    background-size: cover;
+    overflow: hidden;
+}
+
+.banner .slider {
+    width: 1000vw;
+    height: 100%;
+}
+
+.banner .slide {
+    width: 100vw;
+    height: 100%;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.banner .slide-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    height: 100%;
+    flex-direction: column;
+}
+
+.banner h1 {
+    text-transform: uppercase;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.banner span {
+    color: var(--main-orange);
+}
+
+.banner h2 {
+    text-transform: uppercase;
+    margin-top: 16px;
+}
+
+.banner .banner-btn {
+    margin-top: 24px;
+    background-color: var(--main-orange);
+    text-transform: uppercase;
+    color: #FFF;
+    display: block;
+    text-decoration: none;
+    padding: 12px 28px;
+    border-radius: 50px;
+}
+
+.banner .banner-btn:hover {
+    background-color: #c7a57f;
+}
+
+.banner .sliders-pointers {
+    width: 100vw;
+    height: 50px;
+    position: absolute;
+    margin-top: -50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner .pointer {
+    width: 15px;
+    height: 15px;
+    border: 2px solid var(--main-orange);
+    border-radius: 20px;
+    display: flex;
+    margin-left: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.banner .pointer.active {
+    background-color: var(--main-orange);
+}
